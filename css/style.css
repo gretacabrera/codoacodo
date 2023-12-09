@@ -1344,8 +1344,8 @@ li.pagination__item.glide__slide:hover {
    }
 
    .resumen{
-      margin-left: 10%;
-      width: 90%;
+      margin-left: 30%;
+      width: 70%;
    }
    
    .resumen__titulo {
@@ -1360,7 +1360,7 @@ li.pagination__item.glide__slide:hover {
 
    .resumen__detalle {
       display: grid;
-      grid-template-columns: 60% 40%;
+      grid-template-columns: 75% 25%;
       font-size: 3rem;
    }
 
