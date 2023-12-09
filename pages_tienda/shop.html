@@ -11,7 +11,6 @@
 
 </head>
 
-
 <body class="grid-container-shop">
     <!--Inicio Header -->
     <header>
@@ -29,7 +28,6 @@
                         <a class="navbar__link with-icon" href="../pages_tienda/shop.html">SHOP<iconify-icon
                                 icon="ion:chevron-down"></iconify-icon></a>
                         <ul class="submenu">
-
                     <li class="submenu__item">
                         <a href="" class="submenu__link">Funkos</a>
                     </li>
@@ -42,45 +40,48 @@
                 </ul>
             </li>
             <li class="navbar__item">
-                <a class="navbar__link" href="pages_admin/contacto.html">CONTACTO</a>
+                <a class="navbar__link" href="../pages_admin/contacto.html">CONTACTO</a>
             </li>
             <li class="navbar__item">
-                <a class="navbar__link" href="pages_admin/login.html">LOGIN</a>
+                <a class="navbar__link" href="../pages_admin/login.html">LOGIN</a>
             </li>
             <li class="nabvar__item">
-                <a class="navbar__cart" href="pages_tienda/carrito_compras.html">
-                    <img src="multimedia/icons/cart-icon.svg" alt="ícono de carrito">
+                <a class="navbar__cart" href="../pages_tienda/carrito_compras.html">
+                    <img src="../multimedia/icons/cart-icon.svg" alt="ícono de carrito">
                 </a>
             </li>
         </ul>
     </nav>
-
-</header> <!--Fin Header-->
-<!-- Banner -->
+</header> 
+<!--Fin Header-->
   <!--inicio aside -->
-
        <aside class="filter__item">
         <form action="" method="post">
+            <div class="filter-search-order">
             <div class="filter__search">
-                <h3 class="filter__title">BUSCAR</h3>
-                <input class="input__search" type="text" name="busqueda" id="busqueda" placeholder="Item o categoría" />
-            </div>
-            <div class="filter__order">
-                <h3 class="filter__title">ORDENAR POR</h3>
+                
+                <p class="filter__title">BUSCAR</p>
+                <input class="input__search" type="text" name="busqueda" id="buscar" placeholder="Item o categoría" />
+            </div> 
+
+            <div class="filter__order"> 
+                <p class="filter__title">ORDENAR POR</p>
                 <select class="select__order" name="orden" id="orden">
                     <option class="select__order-mayor" value="mayor"> Mayor a menor</option>
                     <option class="select__order-menor" value="menor"> Menor a mayor</option>
                 </select>
             </div>
+            </div>
+
             <div class="filter__price">
-                <h3 class="filter__title">PRECIO</h3>
+                <p class="filter__title">PRECIO</p>
                 <label class="label__filter-price" for="min">MIN</label>
                 <input class="input__price" type="number" name="min" id="min" placeholder="0" />
                 <label class="label__filter-price" for="max">MAX</label>
                 <input class="input__price" type="number" name="max" id="max" placeholder="0" />
             </div>
             <div class="filter__check">
-                <h3 class="filter__title">FILTRAR</h3>
+                <p class="filter__title">FILTRAR</p>
                 <div class="filter__check-item">
                 <input class="input__check" type="checkbox" name="nuevos" id="nuevos" value="1" />
                     <label class="label__filter-check" for="nuevos">NUEVOS</label>
@@ -168,9 +169,9 @@
    <article class= "card-5" >
        <picture class="card-item__img">
            <span class="card-item__tag">NUEVO</span>
-           <img class="card-item__img--front img-responsive " src="../multimedia/pokemon/pidgeotto-1.webp"
+           <img class="card-item__img--front img-responsive  img-responsive " src="../multimedia/pokemon/pidgeotto-1.webp"
                alt="Figura coleccionable de Funko Pidgeotto">
-           <img class="card-item__img--back img-responsive " src="../multimedia/pokemon/pidgeotto-box.webp"
+           <img class="card-item__img--back img-responsive  img-responsive " src="../multimedia/pokemon/pidgeotto-box.webp"
                alt="Figura coleccionable de Funko Pidgeotto Box">
                </picture>
                <h6 class="card-item__licence"  > POKEMON</h6>
@@ -182,9 +183,9 @@
    <article class="card-6" >
        <picture class="card-item__img">
            <span class="card-item__tag">NUEVO</span>
-           <img class="card-item__img--front img-responsive " src="../multimedia/harry-potter/luna-1.webp"
+           <img class="card-item__img--front img-responsive  img-responsive " src="../multimedia/harry-potter/luna-1.webp"
                alt="Figura coleccionable de Funko Luna Lovegood">
-           <img class="card-item__img--back img-responsive " src="../multimedia/harry-potter/luna-box.webp"
+           <img class="card-item__img--back img-responsive  img-responsive " src="../multimedia/harry-potter/luna-box.webp"
                alt="Figura coleccionable de Funko Luna Lovegood Box">
                 </picture>
                <h6 class="card-item__licence" >HARRY POTTER </h6>
@@ -196,9 +197,9 @@
    <article class="card-7" >
        <picture class="card-item__img">
            <span class="card-item__tag">NUEVO</span>
-           <img class="card-item__img--front img-responsive " src="../multimedia/star-wars/trooper-1.webp"
+           <img class="card-item__img--front img-responsive  img-responsive " src="../multimedia/star-wars/trooper-1.webp"
                alt="Figura coleccionable de Funko Stormtrooper">
-           <img class="card-item__img--back img-responsive " src="../multimedia/star-wars/trooper-box.webp"
+           <img class="card-item__img--back img-responsive  img-responsive " src="../multimedia/star-wars/trooper-box.webp"
                alt="Figura coleccionable de Funko Stormtrooper Box">
        </picture>
    <h6 class="card-item__licence"   > STAR WARS</h6>
@@ -210,9 +211,9 @@
    <article class= "card-8" >
        <picture class="card-item__img">
            <span class="card-item__tag">NUEVO</span>
-           <img class="card-item__img--front img-responsive " src="../multimedia/pokemon/pidgeotto-1.webp"
+           <img class="card-item__img--front img-responsive  img-responsive " src="../multimedia/pokemon/pidgeotto-1.webp"
                alt="Figura coleccionable de Funko Pidgeotto">
-           <img class="card-item__img--back img-responsive" src="../multimedia/pokemon/pidgeotto-box.webp"
+           <img class="card-item__img--back img-responsive img-responsive" src="../multimedia/pokemon/pidgeotto-box.webp"
                alt="Figura coleccionable de Funko Pidgeotto Box">
        </picture>
     <h6 class="card-item__licence"  > POKEMON</h6>
@@ -224,9 +225,9 @@
    <article class="card-9" >
        <picture class="card-item__img">
            <span class="card-item__tag">NUEVO</span>
-           <img class="card-item__img--front img-responsive " src="../multimedia/harry-potter/luna-1.webp"
+           <img class="card-item__img--front img-responsive  img-responsive " src="../multimedia/harry-potter/luna-1.webp"
                alt="Figura coleccionable de Funko Luna Lovegood">
-           <img class="card-item__img--back img-responsive " src="../multimedia/harry-potter/luna-box.webp"
+           <img class="card-item__img--back img-responsive  img-responsive " src="../multimedia/harry-potter/luna-box.webp"
                alt="Figura coleccionable de Funko Luna Lovegood Box">
                 </picture>
                <h6 class="card-item__licence" >HARRY POTTER </h6>
@@ -290,27 +291,27 @@
       <script>
         new Glide('.glide', {
             type: 'slider',
-         perView: 3,
-            gap:5 ,
-            focusAt:1,
+            startArt: 1,
+            perView: 4,
+            gap: 5,
             breakpoints: {
-                991: {
-                    perView: 3,
+                992: {
+                    perView: 4
                 },
                 768: {
-                    perView:3,
-                    }
-            
+                    perView: 5,
+                    gap: 0
+                }
             }
         }).mount()
+
+
     </script>
 
-</body 
+
+</body>
    
    </html>
-   
-   
-
 
 
 
