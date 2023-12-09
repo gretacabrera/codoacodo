@@ -999,28 +999,27 @@ li.pagination__item.glide__slide:hover {
 
 /* ESTILOS CARRITO DE COMPRAS */
 
-.contenedor__carrito {
+.contenedor_carrito {
+   margin-left: 10%;
+   margin-right: 10%;
    height: 100%;
-   width: 100%;
 }
 
 .carrito {
-   padding: 5%;
    background-color: var(--light-solid);
 }
 
 .carrito__titulo {
+   padding: 5%;
    font-weight: bold;
    text-decoration: underline var(--red-solid);
 }
 
-.carrito__subtitulo {
+.carrito__item_titulo {
    font-weight: bold;
 }
 
 .carrito__bordes {
-   margin: 2%;
-   padding: 1%;
    border-radius: 6px;
    box-shadow: 1px 1px 2px 2px rgba(142, 136, 136, 0.58);
    -webkit-box-shadow: 1px 1px 2px 2px rgba(142, 136, 136, 0.58);
@@ -1034,41 +1033,63 @@ li.pagination__item.glide__slide:hover {
    align-items: center;
 }
 
+.carrito__items{
+   display: flex;
+   flex-direction: column;
+}
+
 .carrito__item {
    display: grid;
    align-items: center;
 }
 
+.carrito__item__info{
+   display: flex;
+   align-items: center;
+   padding: 5%;
+}
+
+.carrito__item_botones{
+   display: grid;
+   grid-template-columns: 30% 10% 10% 40% 10%;
+   text-align: center;
+   font-size: var(--font-xsmall);
+   padding: 5%;
+}
+
 .carrito__input {
-   padding: 0px;
    border: solid 0.5px var(--dark-solid);
 }
 
+.resumen{
+   margin-bottom: 1rem;
+   font-weight: bold;
+}
+
 .resumen__titulo {
+   padding: 5%;
    font-weight: bold;
    text-decoration: underline var(--red-solid);
    text-align: right;
-}
-
-.resumen__label {
-   float: left;
-   font-weight: bold;
 }
 
 .resumen__button {
    background-color: var(--red-solid);
    color: #FAFAFF;
    border: none;
-   font-weight: bold;
+   font-size: var(--font-small);
+   padding: 3%;
+   margin-top: 3%;
+   width: 100%;
 }
 
-.resumen__valor {
+.resumen__detalle_valor {
    float: right;
    color: var(--gray-solid);
 }
 
 .resumen__hr {
-   margin-top: 5%;
+   margin-top: 0.2rem;
    width: 100%;
 }
 
@@ -1148,7 +1169,7 @@ li.pagination__item.glide__slide:hover {
    display: none;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (width > 992px) {
 
    /*INDEX*/
    /*Responsive Header*/
@@ -1273,6 +1294,86 @@ li.pagination__item.glide__slide:hover {
       font-size: var(--font-jumbo);
    }
 
+   /* -------------- CARRITO DE COMPRAS ------------------------------ */
+   
+   .contenedor_carrito {
+      padding: 1%;
+      margin:0;
+   }
+
+   .carrito__titulo{
+      font-size: 5rem;
+   }
+   
+   .carrito__bordes {
+      margin: 2%;
+      padding: 1%;
+      border-radius: 6px;
+   }
+
+   .carrito__columnas {
+      display: block;
+      font-size: 3rem;
+   }
+   
+   .carrito__columnas_lista {
+      display: grid;
+      grid-template-columns: 50% 25% 30%;
+   }
+   
+   .carrito__item {
+      display: grid;
+      grid-template-columns: 30% 20% 50%;
+      text-align: left;
+   }
+
+   .carrito__item_titulo{
+      font-size: 3rem;
+   }
+
+   .carrito__item_parrafo{
+      font-size: 3rem;
+   }
+
+   .carrito__item_botones{
+      font-size: 2rem;
+   }
+
+   .carrito__input{
+      font-size: 3rem;
+   }
+
+   .resumen{
+      margin-left: 30%;
+      width: 70%;
+   }
+   
+   .resumen__titulo {
+      font-size: 5rem;
+      text-align: right;
+   }
+   
+   .resumen__detalles {
+      display: grid;
+      grid-template-rows: 20% 20% 20% 10% 30%;
+   }
+
+   .resumen__detalle {
+      display: grid;
+      grid-template-columns: 75% 25%;
+      font-size: 3rem;
+   }
+
+   .resumen__detalle_valor{
+      text-align: right;
+   }
+   
+   .resumen__button {
+      font-size: 3rem;
+   }
+
+   /*................................................................*/
+
    /*..............................................................*/
    /*EDIT*/
 
@@ -1324,7 +1425,7 @@ li.pagination__item.glide__slide:hover {
 
 /*RESPONSIVE TABLET*/
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (768px < width <= 992px) {
 
    /*INDEX*/
    /*Responsive Header*/
@@ -1531,6 +1632,84 @@ li.pagination__item.glide__slide:hover {
 
    .btn__create {
       text-align: center;
+   }
+
+   /* -------------- CARRITO DE COMPRAS ------------------------------ */
+   
+   .contenedor_carrito {
+      padding: 1%;
+      margin:0;
+   }
+
+   .carrito__titulo {
+      font-size: var(--font-xlarge);
+   }
+   
+   .carrito__bordes {
+      margin: 2%;
+      padding: 1%;
+      border-radius: 6px;
+   }
+
+   .carrito__columnas {
+      display: block;
+   }
+   
+   .carrito__columnas_lista {
+      display: grid;
+      grid-template-columns: 50% 20% 30%;
+   }
+   
+   .carrito__item {
+      display: grid;
+      grid-template-columns: 15% 30% 50%;
+   }
+
+   .carrito__item_titulo{
+      font-size: var(--font-large);
+   }
+
+   .carrito__item_botones {
+      font-size: 2rem;
+   }
+
+   .carrito__input {
+      font-size: 2rem;
+   }
+
+   .carrito__item_parrafo{
+      font-size: var(--font-medium);
+   }
+
+   .resumen{
+      margin-left: 20%;
+      width: 80%;
+   }
+   
+   .resumen__titulo {
+      text-align: right;
+      font-size: var(--font-xlarge);
+   }
+   
+   .resumen__detalles {
+      display: grid;
+      grid-template-rows: 20% 20% 20% 10% 30%;
+   }
+
+   .resumen__detalle {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      font-size: var(--font-large);
+   }
+
+   .resumen__detalle_valor{
+      text-align: right;
+   }
+   
+   .resumen__button {
+      width: 100%;
+      border: none;
+      font-size: var(--font-large);
    }
 
    /*................................................................*/
@@ -1848,7 +2027,7 @@ li.pagination__item.glide__slide:hover {
 /*------------------------------------------------------------------------------------*/
 /**RESPONSIVE CELULAR**/
 
-@media only screen and (min-width: 500px) and (max-width: 768px) {
+@media only screen and (500px < width <= 768px) {
 
    /*INDEX*/
    /*Responsive Header*/
@@ -2133,6 +2312,71 @@ li.pagination__item.glide__slide:hover {
    .btn__create {
       text-align: center;
    }
+
+   /* -------------- CARRITO DE COMPRAS ------------------------------ */
+   
+   .carrito {
+      padding: 5%;
+   }
+   
+   .carrito__bordes {
+      margin: 2%;
+      padding: 1%;
+      border-radius: 6px;
+   }
+
+   .carrito__columnas {
+      display: block;
+   }
+
+   .carrito__columnas_lista {
+      display: grid;
+      grid-template-columns: 50% 20% 30%;
+   }
+   
+   .carrito__item {
+      display: grid;
+      grid-template-columns: 15% 30% 50%;
+   }
+
+   .carrito__item_titulo{
+      font-size: var(--font-small);
+   }
+
+   .carrito__item_parrafo{
+      font-size: var(--font-xsmall);
+   }
+
+   .resumen{
+      margin-left: 50%;
+      width: 50%;
+   }
+   
+   .resumen__titulo {
+      text-align: right;
+   }
+   
+   .resumen__detalles {
+      display: grid;
+      grid-template-rows: 20% 20% 20% 10% 30%;
+   }
+
+   .resumen__detalle {
+      display: grid;
+      grid-template-columns: 60% 40%;
+   }
+
+   .resumen__detalle_valor{
+      text-align: right;
+      font-size: var(--font-xsmall);
+   }
+   
+   .resumen__button {
+      width: 100%;
+      border: none;
+   }
+
+   /* -------------------------------------------- */
 
    /*------------------------------------------------------------------------------------*/
    /*EDIT*/
@@ -2489,7 +2733,7 @@ p .filter__title {font-size:18px ;}
 
 /*RESPONSIVE CEL SMALL*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (width <= 500px) {
 
    /*Responsive Header*/
    header {
@@ -2793,6 +3037,79 @@ p .filter__title {font-size:18px ;}
    .btn__create {
       text-align: center;
    }
+
+
+
+   /* -------------- CARRITO DE COMPRAS ------------------------------ */
+
+   .container {
+      padding:0px;
+      height: 100%;
+      width: 100%;
+   }
+   
+   .carrito {
+      padding: 5%;
+   }
+   
+   .carrito__bordes {
+      margin: 2%;
+      padding: 1%;
+      border-radius: 6px;
+   }
+
+   .carrito__columnas {
+      display: none;
+   }
+   
+   .carrito__columnas_lista {
+      display: grid;
+      grid-template-columns: 50% 25% 30%;
+   }
+   
+   .carrito__item {
+      display: grid;
+      align-items: center;
+      text-align: center;
+   }
+
+   .carrito__item_titulo{
+      font-size: var(--font-small);
+   }
+
+   .carrito__item_parrafo{
+      font-size: var(--font-xsmall);
+   }
+
+   .carrito__item_botones{
+      font-size: 1rem;
+   }
+   
+   .resumen__titulo {
+      text-align: right;
+   }
+   
+   .resumen__detalles {
+      display: grid;
+      grid-template-rows: 20% 20% 20% 10% 30%;
+   }
+
+   .resumen__detalle {
+      display: grid;
+      grid-template-columns: 60% 40%;
+   }
+
+   .resumen__detalle_valor{
+      text-align: right;
+      font-size: var(--font-xsmall);
+   }
+   
+   .resumen__button {
+      width: 100%;
+      border: none;
+   }
+
+   /* -------------------------------------------- */
 
    /*------------------------------------------------------------------------------------*/
    /*EDIT*/
