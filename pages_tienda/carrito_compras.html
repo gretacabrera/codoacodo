@@ -54,76 +54,79 @@
 
     </header> <!--Fin Header-->
 
-    <main class="container contenedor__carrito">
-        <section class="carrito">
-            <h1 class="carrito__titulo">CARRITO DE COMPRAS</h1>
-            <div class="carrito__columnas carrito__bordes">
-                <p class="carrito__parrafo_columna">DETALLE DEL PRODUCTO</p>
-                <p class="carrito__parrafo_columna">CANTIDAD</p>
-                <p class="carrito__parrafo_columna">TOTAL</p>
+    <main class="contenedor_carrito">
+
+        <h2 class="carrito__titulo">CARRITO DE COMPRAS</h2>
+    
+        <section class="carrito__columnas carrito__bordes">
+            <div class="carrito__columnas_lista">
+                <p>DETALLE DEL PRODUCTO</p>
+                <p>CANTIDAD</p>
+                <p>TOTAL</p>
             </div>
-            <article class="carrito__item carrito__bordes">
-                <div class="carrito__item_funko">
-                    <img src="../multimedia/star-wars/baby-yoda-1.webp" alt="BABY YODA">
-                </div>
-                <div class="carrito__item_descri">
-                    <h3 class="carrito__subtitulo">BABY YODA BLUEBALL</h3>
-                    <p class="carrito__parrafo">STAR WARS</p>
-                    <br>
-                    <p class="carrito__parrafo">Precio unitario: $1799,99</p>
-                </div>
-                <div class="carrito__item_cantidad">
-                    <p class="carrito__item_parrafo">CANTIDAD</p>
-                    <input type="number" class="carrito__input" name="number1" id="number1" placeholder="0">
-                </div>
-                <div class="carrito__item_precio">
-                    <p class="carrito__item_parrafo">TOTAL</p>
-                    <p class="carrito__parrafo">$3599,98</p>
-                </div>
-                <div class="carrito__item_quitar">
-                    <img src="../multimedia/icons/cancelar.png" alt="icono de cancelar"> 
-                </div>
-            </article>
-            <article class="carrito__item carrito__bordes">
-                <div class="carrito__item_funko">
-                    <img src="../multimedia/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO">
-                </div>
-                <div  class="carrito__item_descri">
-                    <h3 class="carrito__subtitulo">PIDGEOTTO</h3>
-                    <p class="carrito__parrafo">POKEMON</p>
-                    <br>
-                    <p class="carrito__parrafo">Precio unitario: $1799,99</p>
-                </div>
-                <div class="carrito__item_cantidad">
-                    <label class="carrito__item_parrafo">CANTIDAD</label>
-                    <input type="number" class="carrito__input" name="number2" id="number2" placeholder="0">
-                </div>
-                <div class="carrito__item_precio">
-                    <p class="carrito__item_parrafo">TOTAL</p>
-                    <p class="carrito__parrafo">$1799,99</p>
-                </div>
-                <div class="carrito__item_quitar">
-                    <img src="../multimedia/icons/cancelar.png" alt="icono de cancelar">
-                </div>
-            </article>
         </section>
+    
+        <section class="carrito__items">
+            <article class="carrito__item carrito__bordes">
+                <div class="carrito__item__info">
+                    <picture>
+                        <img src="../multimedia/star-wars/baby-yoda-1.webp"
+                            alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
+                    </picture>
+                </div>
+                <div>
+                    <h3 class="carrito__item_titulo">BABY YODA BLUEBALL</h3>
+                    <p class="carrito__item_parrafo">STAR WARS</p>
+                    <p class="carrito__item_parrafo">precio unitario: $1799,99</p>
+                </div>
+                <div class="carrito__item_botones">
+                    <input class="carrito__input" type="number" id="cantidad" name="cantidad" value="2">
+                    <button class="carrito__input">+</button>
+                    <button class="carrito__input">-</button>
+                    <p class="carrito__item_parrafo">$ 3599,98</p>
+                    <img src="../multimedia/icons/cancelar.png">
+                </div>
+            </article>
+
+            <article class="carrito__item carrito__bordes">
+                <div class="carrito__item__info">
+                    <picture>
+                        <img src="../multimedia/pokemon/pidgeotto-1.webp"
+                            alt="Figura coleccionable Funko de Pidgeotto de Pokemon">
+                    </picture>
+                </div>
+                <div>
+                    <h3 class="carrito__item_titulo">PIDGEOTTO</h3>
+                    <p class="carrito__item_parrafo">POKEMON</p>
+                    <p class="carrito__item_parrafo">precio unitario: $1799,99</p>
+                </div>
+                <div class="carrito__item_botones">
+                    <input class="carrito__input" type="number" id="cantidad" name="cantidad" value="1">
+                    <button>+</button>
+                    <button>-</button>
+                    <p class="carrito__item_parrafo">$ 1799,99</p>
+                    <img src="../multimedia/icons/cancelar.png">
+                </div>
+            </article>
+
+        </section>
+
         <section class="resumen">
-            <h1 class="resumen__titulo">RESUMEN</h1>
-            <div class="carrito__bordes resumen__div">
-                <label class="resumen__label">CANTIDAD DE ELEMENTOS</label>
-                <label class="resumen__valor">3</label>
-                <br><br>
-                <label class="resumen__label">SUBTOTAL</label>
-                <label class="resumen__valor">$ 5.399,97</label>
-                <br><br>
-                <label class="resumen__label">ENVÍO</label>
-                <label class="resumen__valor">$ 0,00</label>
-                <br><hr class="resumen__hr"><br>
-                <label class="resumen__label resumen__total">TOTAL</label>
-                <label class="resumen__label resumen__total resumen__valor">$ 5.399,97</label>
+
+            <h2 class="resumen__titulo">RESUMEN</h2>
+
+            <div class="resumen__detalles carrito__bordes">
+                <div class="resumen__detalle"><p>CANTIDAD DE ELEMENTOS</p><p class="resumen__detalle_valor">3</p></div>
+                <div class="resumen__detalle"><p>SUBTOTAL</p><p class="resumen__detalle_valor">$ 5.399,97</p></div>
+                <div class="resumen__detalle"><p>ENVIO</p><p class="resumen__detalle_valor">$ 0,00</p></div>
+                <div><hr class="resumen__hr"></div>
+                <div class="resumen__detalle"><p>TOTAL</p><p class="resumen__detalle_valor">$ 5.399,97</p></div>
             </div>
+
             <button class="resumen__button">IR A PAGAR</button>
+            
         </section>
+
     </main>
     <!-- Footer -->
     <footer class="footer">
