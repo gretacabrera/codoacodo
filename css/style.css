@@ -1169,7 +1169,7 @@ li.pagination__item.glide__slide:hover {
    display: none;
 }
 
-@media only screen and (width > 992px) {
+@media only screen and (min-width: 992px) {
 
    /*INDEX*/
    /*Responsive Header*/
@@ -1425,7 +1425,7 @@ li.pagination__item.glide__slide:hover {
 
 /*RESPONSIVE TABLET*/
 
-@media only screen and (768px < width <= 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
 
    /*INDEX*/
    /*Responsive Header*/
@@ -2027,7 +2027,7 @@ li.pagination__item.glide__slide:hover {
 /*------------------------------------------------------------------------------------*/
 /**RESPONSIVE CELULAR**/
 
-@media only screen and (500px < width <= 768px) {
+@media only screen and (min-width: 500px) and (max-width: 768px) {
 
    /*INDEX*/
    /*Responsive Header*/
@@ -2732,8 +2732,7 @@ p .filter__title {font-size:18px ;}
 }
 
 /*RESPONSIVE CEL SMALL*/
-
-@media only screen and (width <= 500px) {
+@media only screen and (max-width: 500px) {
 
    /*Responsive Header*/
    header {
